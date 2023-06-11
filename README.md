@@ -15,7 +15,7 @@ Data Source - https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
 
 - We have in this dataset V1-V28 ( 28 data variables; PCA applied data to protect customer identity) credit card transaction along with Amount and Time of transaction column, with Target column lablled Class=0/1(No Fraud/Fraud) repectively.
 - Checking the total number of datapoints for Fraud/NotFraud, we found the data is highly imbalanced. We also observed that data is highly variable.
-- So we perfomed Robust scaling[https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.RobustScaler.html] which is very effective against outliers.
+- So we perfomed [Robust scaling](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.RobustScaler.html) which is very effective against outliers.
 - Next we use Stratified sampling, so we have euqal probability of all type of data samples.
 - To address the main issue of imbalance data, we persom a sampling on stratified sampled output to get euqal number of fraud and NotFraud cases.
 
@@ -36,7 +36,7 @@ Data Source - https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
   - PCA - Principal Component Analysis
   - TSVD - Truncated Singluar Value Decompisition
 
-**4. Classifier**
+**4. Classifier and Evaulation Metrics**
  
 - X - predictor variables and Y - Target variables.
 - Simple Train and Test split, since data is already scaled and sampled with equal probability of both classes.
@@ -74,4 +74,4 @@ To put in simple words, wrongly predict the transaction to be genuine instead of
 - Specificity Score: 0.99
 - Sensitivity Score: 0.87
 
-
+Conclusion, for this project suprisingly Logistic regression performed the best having low **False Negative rate.**
