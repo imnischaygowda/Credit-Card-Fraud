@@ -1,4 +1,4 @@
-Credit Card Fraud Analytics
+Credit Card Fraud Analytics & ML Modeling
 ===========================
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
